@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Asande Mbhense">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MR SUITS SA | Bespoke Tailoring &amp; Fine Menswear</title>
+<meta name="description" content="MR SUITS SA: premium formal menswear with refined class. Luxury suits at affordable prices with nationwide delivery across South Africa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Fixed image stage for chapters I-V -->
+<div class="scenes" aria-hidden="true">
+  <div class="scene"><img src="assets/hero.jpg" alt=""></div>
+  <div class="scene"><img src="assets/shirt.jpg" alt=""></div>
+  <div class="scene"><img src="assets/waistcoat.jpg" alt=""></div>
+  <div class="scene"><img src="assets/jacket.jpg" alt=""></div>
+  <div class="scene silhouette"><img src="assets/suit.jpg" alt=""></div>
+</div>
+<canvas id="dust" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar" id="topbar">
+  <a href="#hero" class="wordmark"><i class="gem"></i>MR SUITS <span>SA</span></a>
+  <button class="menu-btn" aria-label="Menu" aria-expanded="false"><i></i><i></i></button>
+  <nav class="topbar-nav" id="topnav">
+    <a href="#collection">Collection</a>
+    <a href="#experience">Experience</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#booking" class="topbar-link">Book a Fitting</a>
+  </nav>
+</header>
+
+<nav class="chapters" aria-label="Chapters">
+  <a href="#hero"><span>I</span></a>
+  <a href="#shirt"><span>II</span></a>
+  <a href="#waistcoat"><span>III</span></a>
+  <a href="#canvas"><span>IV</span></a>
+  <a href="#silhouette"><span>V</span></a>
+</nav>
+
+<!-- 1-5: story, driven by the fixed image stage -->
+<main id="story">
+
+  <section id="hero" class="panel hero" data-side="top">
+    <div class="copy">
+      <p class="eyebrow">MR SUITS SA &middot; Bespoke tailoring &amp; fine menswear</p>
+      <h1>The<br>Anatomy<br><em>of a Suit</em></h1>
+    </div>
+    <div class="scroll-cue"><span>Scroll</span><i></i></div>
+  </section>
+
+  <section id="shirt" class="panel" data-side="left">
+    <div class="copy">
+      <p class="eyebrow">01 / The Foundation</p>
+      <h2>A Shirt of <em>Pure Cotton</em></h2>
+      <dl class="spec"><dt>Cloth</dt><dd>Egyptian Giza Cotton</dd></dl>
+    </div>
+  </section>
+
+  <section id="waistcoat" class="panel" data-side="right">
+    <div class="copy">
+      <p class="eyebrow">02 / The Waistcoat</p>
+      <h2>Structure, <em>Held Close</em></h2>
+      <p>The waistcoat anchors the silhouette. Crafted with a tailored back and structured interlining, it creates a seamless transition between the shirt and the jacket.</p>
+    </div>
+  </section>
+
+  <section id="canvas" class="panel" data-side="left">
+    <div class="copy">
+      <p class="eyebrow">03 / The Canvas</p>
+      <h2>Built on <em>Full Canvas</em></h2>
+      <dl class="spec"><dt>Construction</dt><dd>Hand-padded full canvas</dd></dl>
+    </div>
+  </section>
+
+  <section id="silhouette" class="panel" data-side="right">
+    <div class="copy">
+      <p class="eyebrow">04 / The Silhouette</p>
+      <h2>The Complete <em>Silhouette</em></h2>
+    </div>
+  </section>
+
+</main>
+
+<!-- 6. THE FIT -->
+<section id="fit" class="fit">
+  <div class="stick">
+    <img class="bg" src="assets/street.jpg" alt="">
+    <div class="scrim left"></div>
+    <div class="fit-copy">
+      <p class="eyebrow">05 / The Wear</p>
+      <h2>Made to <em>Be Worn</em></h2>
+      <p class="lede">An individual&rsquo;s measure of luxury.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7. COLOUR & TONE -->
+<section id="colour" class="colour">
+  <div class="pin">
+    <div class="bgwrap">
+      <img class="bg" src="assets/street.jpg" alt="Four men in tailored suits in charcoal, cream, navy and grey">
+      <ul class="swatches">
+        <li style="left:27%">Charcoal</li>
+        <li style="left:43.5%">Cream</li>
+        <li style="left:59.5%">Navy</li>
+        <li style="left:76%">Grey</li>
+      </ul>
+    </div>
+    <div class="scrim right"></div>
+    <div class="colour-head">
+      <p class="eyebrow">06 / The Palette</p>
+      <h2>The Language <em>of Colour</em></h2>
+    </div>
+  </div>
+</section>
+
+<!-- 8. FINE DETAILS -->
+<section id="details" class="details">
+  <div class="pin">
+    <div class="pan">
+      <img class="bg" src="assets/macro.jpg" alt="Macro of horn buttons and a hand-finished buttonhole on herringbone wool">
+      <span class="tag" style="left:47%;top:24%">Genuine horn buttons</span>
+      <span class="tag" style="left:63%;top:60%">Working buttonhole</span>
+    </div>
+    <div class="scrim left"></div>
+    <div class="details-head">
+      <p class="eyebrow">07 / The Detail</p>
+      <h2>The Last <em>Quarter-Inch</em></h2>
+      <p>Resisting shortcuts, every seam is finished by hand. Perfection lives in the details.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 8. COLLECTION / GALLERY -->
+<section id="collection" class="block collection">
+  <div class="wrap">
+    <div class="block-head reveal">
+      <p class="eyebrow">08 / The Collection</p>
+      <h2>Introducing Our Most <em>Iconic Designs</em></h2>
+      <p class="offer"><span>Limited time</span> Get 2 Suits for R2499</p>
+    </div>
+    <div class="filters reveal" role="tablist" aria-label="Filter suits">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="two">Two-Piece</button>
+      <button class="chip" data-filter="three">Three-Piece</button>
+      <button class="chip" data-filter="double">Double-Breasted</button>
+      <button class="chip" data-filter="tux">Tuxedo</button>
+    </div>
+    <div class="grid" id="grid">
+      <article class="card" data-cat="two" data-name="Classic Navy Suit" data-fabric="Premium Wool Blend" data-fit="Tailored Fit" data-was="R3499" data-price="R2499" data-wa="https://wa.me/27735726119?text=Hi%20MR%20SUITS%20SA%2C%20I%27d%20like%20to%20enquire%20about%20the%20Classic%20Navy%20Suit%20%28R2499%29.%20My%20name%20is%20">
+        <button class="card-img" type="button" aria-label="View Classic Navy Suit">
+          <img src="https://i.postimg.cc/c1XkmpwY/classic-navy.jpg" alt="Classic Navy Suit" loading="lazy" onerror="this.style.opacity=0">
+          <span class="tag">Tailored Fit</span>
+          <span class="zoom">View</span>
+        </button>
+        <div class="card-info">
+          <h3>Classic Navy Suit</h3>
+          <p>Premium Wool Blend</p>
+          <div class="price"><s>R3499</s><b>R2499</b></div>
+          <button class="btn-line" type="button" data-ask="Tell me about the Classic Navy Suit">Ask about this suit</button>
+        </div>
+      </article>
+      <article class="card" data-cat="two" data-name="Charcoal Slim Fit" data-fabric="Italian Cotton Blend" data-fit="Slim Fit" data-was="R3499" data-price="R2499" data-wa="https://wa.me/27735726119?text=Hi%20MR%20SUITS%20SA%2C%20I%27d%20like%20to%20enquire%20about%20the%20Charcoal%20Slim%20Fit%20%28R2499%29.%20My%20name%20is%20">
+        <button class="card-img" type="button" aria-label="View Charcoal Slim Fit">
+          <img src="https://i.postimg.cc/gjTDWPHT/charcoal.jpg" alt="Charcoal Slim Fit" loading="lazy" onerror="this.style.opacity=0">
+          <span class="tag">Slim Fit</span>
+          <span class="zoom">View</span>
+        </button>
+        <div class="card-info">
+          <h3>Charcoal Slim Fit</h3>
+          <p>Italian Cotton Blend</p>
+          <div class="price"><s>R3499</s><b>R2499</b></div>
+          <button class="btn-line" type="button" data-ask="Tell me about the Charcoal Slim Fit">Ask about this suit</button>
+        </div>
+      </article>
+      <article class="card" data-cat="tux" data-name="Midnight Black Tuxedo" data-fabric="Luxury Silk Blend" data-fit="Exclusive Drop" data-was="R3999" data-price="R2799" data-wa="https://wa.me/27735726119?text=Hi%20MR%20SUITS%20SA%2C%20I%27d%20like%20to%20enquire%20about%20the%20Midnight%20Black%20Tuxedo%20%28R2799%29.%20My%20name%20is%20">
+        <button class="card-img" type="button" aria-label="View Midnight Black Tuxedo">
+          <img src="https://i.postimg.cc/TY5jDF9T/luxury-texedo-black.jpg" alt="Midnight Black Tuxedo" loading="lazy" onerror="this.style.opacity=0">
+          <span class="tag">Exclusive Drop</span>
+          <span class="zoom">View</span>
+        </button>
+        <div class="card-info">
+          <h3>Midnight Black Tuxedo</h3>
+          <p>Luxury Silk Blend</p>
+          <div class="price"><s>R3999</s><b>R2799</b></div>
+          <button class="btn-line" type="button" data-ask="Tell me about the Midnight Black Tuxedo">Ask about this suit</button>
+        </div>
+      </article>
+      <article class="card" data-cat="two" data-name="Light Gray Suit" data-fabric="Premium Linen Blend" data-fit="Tailored Fit" data-was="R3299" data-price="R2299" data-wa="https://wa.me/27735726119?text=Hi%20MR%20SUITS%20SA%2C%20I%27d%20like%20to%20enquire%20about%20the%20Light%20Gray%20Suit%20%28R2299%29.%20My%20name%20is%20">
+        <button class="card-img" type="button" aria-label="View Light Gray Suit">
+          <img src="https://i.postimg.cc/3xMXC1Sm/light-gray.jpg" alt="Light Gray Suit" loading="lazy" onerror="this.style.opacity=0">
+          <span class="tag">Tailored Fit</span>
+          <span class="zoom">View</span>
+        </button>
+        <div class="card-info">
+          <h3>Light Gray Suit</h3>
+          <p>Premium Linen Blend</p>
+          <div class="price"><s>R3299</s><b>R2299</b></div>
+          <button class="btn-line" type="button" data-ask="Tell me about the Light Gray Suit">Ask about this suit</button>
+        </div>
+      </article>
+      <article class="card" data-cat="double" data-name="Double-Breasted Navy" data-fabric="Wool &amp; Cashmere Blend" data-fit="Classic Fit" data-was="R3799" data-price="R2699" data-wa="https://wa.me/27735726119?text=Hi%20MR%20SUITS%20SA%2C%20I%27d%20like%20to%20enquire%20about%20the%20Double-Breasted%20Navy%20%28R2699%29.%20My%20name%20is%20">
+        <button class="card-img" type="button" aria-label="View Double-Breasted Navy">
+          <img src="https://i.postimg.cc/j59wqqBP/double-breasetd-navy.jpg" alt="Double-Breasted Navy" loading="lazy" onerror="this.style.opacity=0">
+          <span class="tag">Classic Fit</span>
+          <span class="zoom">View</span>
+        </button>
+        <div class="card-info">
+          <h3>Double-Breasted Navy</h3>
+          <p>Wool &amp; Cashmere Blend</p>
+          <div class="price"><s>R3799</s><b>R2699</b></div>
+          <button class="btn-line" type="button" data-ask="Tell me about the Double-Breasted Navy">Ask about this suit</button>
+        </div>
+      </article>
+      <article class="card" data-cat="three" data-name="Three-Piece Burgundy" data-fabric="Premium Velvet Blend" data-fit="Exclusive Drop" data-was="R4299" data-price="R2999" data-wa="https://wa.me/27735726119?text=Hi%20MR%20SUITS%20SA%2C%20I%27d%20like%20to%20enquire%20about%20the%20Three-Piece%20Burgundy%20%28R2999%29.%20My%20name%20is%20">
+        <button class="card-img" type="button" aria-label="View Three-Piece Burgundy">
+          <img src="https://i.postimg.cc/MKB31dbJ/mnavy-three.jpg" alt="Three-Piece Burgundy" loading="lazy" onerror="this.style.opacity=0">
+          <span class="tag">Exclusive Drop</span>
+          <span class="zoom">View</span>
+        </button>
+        <div class="card-info">
+          <h3>Three-Piece Burgundy</h3>
+          <p>Premium Velvet Blend</p>
+          <div class="price"><s>R4299</s><b>R2999</b></div>
+          <button class="btn-line" type="button" data-ask="Tell me about the Three-Piece Burgundy">Ask about this suit</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- LOOKBOOK -->
+<section id="lookbook" class="block lookbook">
+  <div class="wrap">
+    <div class="block-head reveal">
+      <p class="eyebrow">The Lookbook</p>
+      <h2>See Our Suits <em>in the Wild</em></h2>
+    </div>
+    <div class="wild">
+        <figure><img src="https://i.postimg.cc/9QrMxw02/zanele-graduation.jpg" alt="Zanele &ndash; Graduation Suit" loading="lazy" onerror="this.style.opacity=0"><figcaption>Zanele &ndash; Graduation Suit</figcaption></figure>
+        <figure><img src="https://i.postimg.cc/JnmRWsrG/thabo-wdding.jpg" alt="Thabo &ndash; Wedding Day" loading="lazy" onerror="this.style.opacity=0"><figcaption>Thabo &ndash; Wedding Day</figcaption></figure>
+        <figure><img src="https://i.postimg.cc/BZBypMyd/bmmm.jpg" alt="David &ndash; Business Conference" loading="lazy" onerror="this.style.opacity=0"><figcaption>David &ndash; Business Conference</figcaption></figure>
+        <figure><img src="https://i.postimg.cc/ZRK3SYbP/ceremonyy.jpg" alt="Lerato &ndash; Award Ceremony" loading="lazy" onerror="this.style.opacity=0"><figcaption>Lerato &ndash; Award Ceremony</figcaption></figure>
+        <figure><img src="https://i.postimg.cc/X73ZS7sr/Gala.jpg" alt="Mike &ndash; Gala Dinner" loading="lazy" onerror="this.style.opacity=0"><figcaption>Mike &ndash; Gala Dinner</figcaption></figure>
+        <figure><img src="https://i.postimg.cc/7Z3TJJbM/ll.jpg" alt="John &ndash; Brother&rsquo;s Wedding" loading="lazy" onerror="this.style.opacity=0"><figcaption>John &ndash; Brother&rsquo;s Wedding</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="block experience">
+  <div class="wrap">
+    <div class="block-head reveal">
+      <p class="eyebrow">Why MR SUITS SA</p>
+      <h2>Why Our Clients <em>Choose Us</em></h2>
+    </div>
+    <div class="xp-grid">
+      <div class="xp reveal"><span>01</span><h3>Tailored Luxury</h3><p>Suits made with precision, elegance, and durability to ensure you look your absolute best.</p></div>
+      <div class="xp reveal"><span>02</span><h3>Affordable Class</h3><p>Look like a king without breaking the bank. Premium quality at accessible prices.</p></div>
+      <div class="xp reveal"><span>03</span><h3>Nationwide Delivery</h3><p>Fast, reliable shipping across South Africa with secure packaging and tracking.</p></div>
+      <div class="xp reveal"><span>04</span><h3>Direct Support</h3><p>WhatsApp or book with ease. We reply instantly to all your inquiries.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="block about">
+  <div class="wrap about-grid">
+    <div class="about-text">
+      <p class="eyebrow reveal">Our Story</p>
+      <h2 class="reveal">Crafting Confidence, <em>One Suit at a Time</em></h2>
+      <p class="reveal">Founded in 2018, MR SUITS SA began with a simple mission: to provide South African men with premium quality formalwear at prices that don&rsquo;t break the bank. Our founder, a master tailor with over 15 years experience in luxury menswear, saw the need for accessible elegance.</p>
+      <p class="reveal">Every suit in our collection reflects our commitment to quality craftsmanship, attention to detail, and timeless style. We believe that when you look your best, you perform at your best, whether it&rsquo;s for a wedding, business meeting, or special occasion.</p>
+      <div class="stats reveal">
+        <div><b>8+</b><span>Years in Formalwear</span></div>
+        <div><b>2000+</b><span>Clients Dressed</span></div>
+        <div><b>Nationwide</b><span>Shipping</span></div>
+      </div>
+    </div>
+    <div class="about-img reveal"><img src="assets/about.jpg" alt="Close-up of horn buttons and herringbone wool, MR SUITS SA tailoring" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="block testimonials">
+  <div class="wrap">
+    <div class="block-head reveal">
+      <p class="eyebrow">Kind Words</p>
+      <h2>They Dressed <em>to Impress</em></h2>
+    </div>
+    <div class="quotes reveal">
+      <blockquote class="quote active"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>&ldquo;I looked like royalty on my wedding day. The fit was perfect and the quality exceeded my expectations.&rdquo;</p><footer><i>S</i>Sipho M.</footer></blockquote>
+      <blockquote class="quote"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>&ldquo;Best suit I&rsquo;ve ever owned. Got two more for my brothers! The service was exceptional from start to finish.&rdquo;</p><footer><i>T</i>Tom B.</footer></blockquote>
+      <blockquote class="quote"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>&ldquo;The virtual consultation was so convenient and the suit arrived perfectly tailored. Will definitely order again.&rdquo;</p><footer><i>J</i>James K.</footer></blockquote>
+      <div class="q-ctrl"><button class="q-prev" aria-label="Previous">&larr;</button><span class="q-dots"></span><button class="q-next" aria-label="Next">&rarr;</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="block booking">
+  <div class="wrap narrow">
+    <div class="block-head reveal center">
+      <p class="eyebrow">Book a Fitting</p>
+      <h2>Let&rsquo;s Suit <em>You Up</em></h2>
+      <p class="sub">Tell us what you need and we&rsquo;ll confirm your appointment on WhatsApp.</p>
+    </div>
+    <div class="form-card reveal">
+      <form id="booking-form" novalidate>
+        <div class="row">
+          <label>Full Name<input type="text" name="name" required autocomplete="name"></label>
+          <label>Phone Number<input type="tel" name="phone" required autocomplete="tel"></label>
+        </div>
+        <label>Email Address<input type="email" name="email" required autocomplete="email"></label>
+        <label>Service
+          <select name="service" required>
+            <option value="" disabled selected>Select service</option>
+            <option>Get 2 Suits (R2499)</option>
+            <option>Custom Tailoring</option>
+            <option>Virtual Consultation</option>
+            <option>Bulk Order / Events</option>
+          </select>
+        </label>
+        <label>Message (optional)<textarea name="message" rows="4"></textarea></label>
+        <button class="btn btn-gold wide" type="submit">Book Now</button>
+        <p class="form-note" id="booking-note" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="block contact">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Talk To Us <em>Directly</em></h2>
+      <ul class="info">
+        <li><span>Phone &amp; WhatsApp</span><a href="tel:+27735726119">+27 73 572 6119</a></li>
+        <li><span>Email</span><a href="mailto:njabuloasande43@gmail.com">njabuloasande43@gmail.com</a></li>
+        <li><span>Hours</span>Mon&ndash;Sat: 9AM &ndash; 6PM</li>
+      </ul>
+      <button class="btn btn-ghost" type="button" data-ask="">Ask our assistant</button>
+    </div>
+    <div class="form-card reveal">
+      <h3>Have questions? We&rsquo;ll respond fast.</h3>
+      <form id="contact-form">
+        <label>Your Name<input type="text" name="name" required></label>
+        <label>Your Email<input type="email" name="email" required></label>
+        <label>Subject<input type="text" name="subject"></label>
+        <label>Your Message<textarea name="message" rows="4" required></textarea></label>
+        <button class="btn btn-gold wide" type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- 9. CTA -->
+<section id="cta" class="cta">
+  <img class="cta-bg" src="assets/hero.jpg" alt="">
+  <div class="glass">
+    <div class="mark">M<span>S</span></div>
+    <p class="eyebrow">MR SUITS SA &middot; Bespoke tailoring &amp; fine menswear</p>
+    <h2>Tailoring <em>for the few.</em></h2>
+    <div class="bar"></div>
+    <div class="cta-buttons">
+      <a href="#booking" class="btn btn-gold">Book a Consultation</a>
+      <a href="#collection" class="btn btn-ghost">Explore Collection</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div><a href="#hero" class="wordmark"><i class="gem"></i>MR SUITS <span>SA</span></a><p>Luxury menswear at affordable prices. Nationwide delivery across South Africa.</p></div>
+    <div><h4>Explore</h4><a href="#collection">Collection</a><a href="#experience">Experience</a><a href="#about">About</a><a href="#booking">Book a Fitting</a></div>
+    <div><h4>Contact</h4><a href="tel:+27735726119">+27 73 572 6119</a><a href="mailto:njabuloasande43@gmail.com">njabuloasande43@gmail.com</a><span>Mon&ndash;Sat: 9AM &ndash; 6PM</span></div>
+  </div>
+  <p class="copyright">&copy; 2026 MR SUITS SA. All rights reserved.</p>
+  <p class="credit">Website designed &amp; built by <a href="https://www.linkedin.com/in/asande-mbhense-345a6b323" target="_blank" rel="noopener">Asande Mbhense</a> &middot; <a href="tel:+27735726119">073 572 6119</a></p>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+  <button class="lb-close" aria-label="Close">&times;</button>
+  <button class="lb-nav lb-prev" aria-label="Previous suit">&larr;</button>
+  <button class="lb-nav lb-next" aria-label="Next suit">&rarr;</button>
+  <div class="lb-body">
+    <div class="lb-img"><img id="lb-img" alt=""></div>
+    <div class="lb-info">
+      <p class="eyebrow" id="lb-fit"></p>
+      <h3 id="lb-name"></h3>
+      <p id="lb-fabric"></p>
+      <div class="price big"><s id="lb-was"></s><b id="lb-price"></b></div>
+      <button class="btn btn-gold" id="lb-wa" type="button" data-ask="">Ask about this suit</button>
+      <a class="btn btn-ghost" href="#booking" id="lb-book">Book a Fitting</a>
+    </div>
+  </div>
+</div>
+
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="main.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>
